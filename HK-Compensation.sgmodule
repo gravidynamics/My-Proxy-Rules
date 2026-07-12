@@ -1,1 +1,28 @@
+#!name=HK-Compensation
+#!desc=Route special services to available country.
 
+[Rule]
+
+# Google
+# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,US
+
+# AI
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list,US
+
+#TikTok
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,US
+
+# PayPal
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,US
+
+# SpaceX & Starlink
+DOMAIN-SUFFIX,spacex.com,US
+DOMAIN-SUFFIX,starlink.com,US
+DOMAIN-SUFFIX,starlinkisp.net,US
+DOMAIN-SUFFIX,starlinkspace.com,US
+DOMAIN-SUFFIX,sxndata.com,US
+DOMAIN-SUFFIX,sxn.io,US
+DOMAIN-KEYWORD,spacex,US
+DOMAIN-KEYWORD,starlink,US
