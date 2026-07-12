@@ -4,25 +4,25 @@
 [Rule]
 
 # Google
-# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,US
+# RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,US,extended-matching
 
 # AI
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,US
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list,US
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,US,extended-matching
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list,US,extended-matching
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list,US,extended-matching
 
 #TikTok
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,US,extended-matching
 
 # PayPal
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,US,extended-matching
 
 # SpaceX & Starlink
-DOMAIN-SUFFIX,spacex.com,US
-DOMAIN-SUFFIX,starlink.com,US
-DOMAIN-SUFFIX,starlinkisp.net,US
-DOMAIN-SUFFIX,starlinkspace.com,US
-DOMAIN-SUFFIX,sxndata.com,US
-DOMAIN-SUFFIX,sxn.io,US
-DOMAIN-KEYWORD,spacex,US
-DOMAIN-KEYWORD,starlink,US
+DOMAIN-SUFFIX,spacex.com,US,extended-matching
+DOMAIN-SUFFIX,starlink.com,US,extended-matching
+DOMAIN-SUFFIX,starlinkisp.net,US,extended-matching
+DOMAIN-SUFFIX,starlinkspace.com,US,extended-matching
+DOMAIN-SUFFIX,sxndata.com,US,extended-matching
+DOMAIN-SUFFIX,sxn.io,US,extended-matching
+DOMAIN-KEYWORD,spacex,US,extended-matching
+DOMAIN-KEYWORD,starlink,US,extended-matching
