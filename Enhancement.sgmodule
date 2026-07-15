@@ -6,32 +6,27 @@
 DOMAIN-SUFFIX,push.apple.com,PROXY
 DOMAIN-SUFFIX,akadns.net,PROXY
 DOMAIN-KEYWORD,apple.com.edgekey.net,PROXY
-
 IP-CIDR,17.249.0.0/16,PROXY,no-resolve
 IP-CIDR,17.252.0.0/16,PROXY,no-resolve
 IP-CIDR,17.57.144.0/22,PROXY,no-resolve
 IP-CIDR,17.188.128.0/18,PROXY,no-resolve
 IP-CIDR,17.188.20.0/23,PROXY,no-resolve
-
 IP-CIDR6,2620:149:a44::/48,PROXY,no-resolve
 IP-CIDR6,2403:300:a42::/48,PROXY,no-resolve
 IP-CIDR6,2403:300:a51::/48,PROXY,no-resolve
 IP-CIDR6,2a01:b740:a42::/48,PROXY,no-resolve
-
 # Google
 # RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,US,extended-matching
-
 # AI
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,US,extended-matching
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list,US,extended-matching
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Anthropic/Anthropic.list,US,extended-matching
-
+# Spotify
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Spotify/Spotify.list,US,extended-matching
 #TikTok
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,US,extended-matching
-
 # PayPal
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list,US,extended-matching
-
 # SpaceX & Starlink
 DOMAIN-SUFFIX,spacex.com,US,extended-matching
 DOMAIN-SUFFIX,starlink.com,US,extended-matching
