@@ -17,6 +17,8 @@ IP-CIDR6,2403:300:a51::/48,PROXY,no-resolve
 IP-CIDR6,2a01:b740:a42::/48,PROXY,no-resolve
 # Google
 # RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list,US,extended-matching
+# YouTube
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list,US,extended-matching,no-resolve
 # AI
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list,ISP,extended-matching
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list,ISP,extended-matching
