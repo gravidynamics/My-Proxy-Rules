@@ -22,22 +22,10 @@ IP-CIDR6,2a01:b740:a42::/48,PROXY,no-resolve
 # RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,US
 
 # AI
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/OpenAI/OpenAI.list,US
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Claude/Claude.list,US
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Anthropic/Anthropic.list,US
+https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/global.list,ISP
 
 #TikTok
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,US
 
 # PayPal
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,US
-
-# SpaceX & Starlink
-DOMAIN-SUFFIX,spacex.com,US
-DOMAIN-SUFFIX,starlink.com,US
-DOMAIN-SUFFIX,starlinkisp.net,US
-DOMAIN-SUFFIX,starlinkspace.com,US
-DOMAIN-SUFFIX,sxndata.com,US
-DOMAIN-SUFFIX,sxn.io,US
-DOMAIN-KEYWORD,spacex,US
-DOMAIN-KEYWORD,starlink,US
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,ISP
