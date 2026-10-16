@@ -22,7 +22,7 @@ IP-CIDR6,2a01:b740:a42::/48,PROXY,no-resolve
 # RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,US
 
 # AI
-https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/global.list,ISP
+RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/global.list,ISP
 
 #TikTok
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,US
