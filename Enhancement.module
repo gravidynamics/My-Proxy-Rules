@@ -4,16 +4,18 @@
 [Rule]
 # APNs
 RULE-SET,https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/shadowrocket/apns.list,PROXY
-# YouTube
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,US
-# Google
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,US
-# AI
-RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/anthropic.list,ISP
-RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/meta-ai.list,ISP
-RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/openai.list,ISP
-RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/x-ai.list,ISP
-# TikTok
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,US
 # PayPal
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,ISP
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/PayPal_rules_e33777c2ef792abd.list,FTTH
+# Wise
+RULE-SET,https://rule-26r.pages.dev/data/_shared/artifacts/Wise_rules_2bd2dd93e4d838be.list,DIRECT
+# AI
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Anthropic_rules_f9e0decc2657fdcd.list,FTTH
+RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/meta-ai.list,FTTH
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/OpenAI_rules_f362ba1006ae0e0c.list,FTTH
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Grok_rules_1686b96ebfe522d0.list,FTTH
+# YouTube
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/YouTube_rules_329ca26de78c21fe.list,US
+# Google
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Google_rules_0804a8c31c599a1e.list,US
+# TikTok
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/TikTok_rules_f1418ba5f368c034.list,US
