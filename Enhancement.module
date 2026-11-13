@@ -1,5 +1,5 @@
 #!name=Enhancement
-#!desc=Route special services to available country.
+#!desc=Route special services.
 
 [Rule]
 # APNs
