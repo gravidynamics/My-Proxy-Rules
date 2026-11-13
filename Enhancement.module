@@ -9,10 +9,10 @@ RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/PayPal_rules_e33777c
 # Wise
 RULE-SET,https://rule-26r.pages.dev/data/_shared/artifacts/Wise_rules_2bd2dd93e4d838be.list,DIRECT
 # AI
-RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Anthropic_rules_f9e0decc2657fdcd.list,FTTH
-RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/meta-ai.list,FTTH
-RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/OpenAI_rules_f362ba1006ae0e0c.list,FTTH
-RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Grok_rules_1686b96ebfe522d0.list,FTTH
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Anthropic_rules_f9e0decc2657fdcd.list,Access
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/OpenAI_rules_f362ba1006ae0e0c.list,Access
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/Grok_rules_1686b96ebfe522d0.list,Access
+RULE-SET,https://raw.githubusercontent.com/VPSDance/ai-proxy-rules/refs/heads/main/rules/shadowrocket/meta-ai.list,Access
 # YouTube
 RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/YouTube_rules_329ca26de78c21fe.list,US
 # Google
