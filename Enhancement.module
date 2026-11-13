@@ -5,7 +5,7 @@
 # APNs
 RULE-SET,https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/shadowrocket/apns.list,PROXY
 # PayPal
-RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/PayPal_rules_e33777c2ef792abd.list,FTTH
+RULE-SET,https://magicrule.pages.dev/data/_shared/artifacts/PayPal_rules_e33777c2ef792abd.list,Access
 # Wise
 RULE-SET,https://rule-26r.pages.dev/data/_shared/artifacts/Wise_rules_2bd2dd93e4d838be.list,DIRECT
 # AI
