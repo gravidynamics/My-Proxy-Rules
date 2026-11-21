@@ -44,7 +44,7 @@
  *       The script reports this conflict as an error.
  *
  * - IPs registered over a cellular connection (primary interface pdp_ip*)
- *   are marked with 📶 for identification in the dashboard.
+ *   are marked with 🛰️ for identification in the dashboard.
  *
  * Token configuration (highest priority first):
  * 1. argument: tokens=<pgnfw_xxx>[@slot],<pgnfw_yyy>
@@ -61,7 +61,7 @@ var INLINE_TOKENS = "";
 var API_BASE = "https://124.221.69.228/api/firewall/"; // + <token> + "/add"
 var STORE_PREFIX = "Po0_fw_";
 var TOKENS_KEY = "Po0fw_tokens";
-var HIST_WINDOW_MS = 24 * 3600 * 1000; // 📶 Cellular activity tracking window
+var HIST_WINDOW_MS = 24 * 3600 * 1000; // 🛰️ Cellular activity tracking window
 
 /* ---------- Runtime Compatibility Layer ---------- */
 
@@ -308,20 +308,20 @@ function ensureWhitelisted(item, index) {
 }
 
 // One entry per token. Stored information excludes the token itself and
-// contains only whitelist and slot details. Cellular IPs are marked with 📶.
+// contains only whitelist and slot details. Cellular IPs are marked with 🛰️.
 function describe(index, ctx) {
   var st = ctx.st;
   var pin = ctx.slot !== null && ctx.slot !== undefined && ctx.slot !== ""
-    ? " 📌" + ctx.slot
+    ? " ⛰️" + ctx.slot
     : "";
 
   var head = "#" + (index + 1) + pin + " ";
 
-  if (st.error) return head + "❌ " + st.error;
+  if (st.error) return head + "🗻 " + st.error;
   if (st.enabled === false) return head + "⚠️ Firewall is disabled";
 
   if (!st.applied) {
-    return head + "❌ Whitelisting failed " + st.whitelist.length + "/" + st.limit;
+    return head + "🗻 Whitelisting failed " + st.whitelist.length + "/" + st.limit;
   }
 
   var hist = readHistory(ctx.kvHist);
@@ -335,18 +335,18 @@ function describe(index, ctx) {
 
   var ips = st.whitelist
     .map(function (ip) {
-      var slotTag = slotOf[ip] !== undefined ? " 📌" + slotOf[ip] : "";
+      var slotTag = slotOf[ip] !== undefined ? " ⛰️" + slotOf[ip] : "";
 
       return (
         ip +
         slotTag +
-        (cellIps[ip] ? " 📶" : "") +
+        (cellIps[ip] ? " 🛰️" : "") +
         (sameC24(ip, st.currentIp) ? " ←" : "")
       );
     })
     .join("\n    ");
 
-  return head + "✅ " + st.whitelist.length + "/" + st.limit + "\n    " + ips;
+  return head + "🌋 " + st.whitelist.length + "/" + st.limit + "\n    " + ips;
 }
 
 // Token separators: , | ; 、； and whitespace.
@@ -425,7 +425,7 @@ if (tokens.length === 0) {
       results.length +
       " · Exit IP " +
       exitIp +
-      (onCellular() ? " 📶" : "");
+      (onCellular() ? " 🛰️" : "");
 
     var content = lines.join("\n");
 
