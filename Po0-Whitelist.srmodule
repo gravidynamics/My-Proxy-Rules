@@ -1,0 +1,9 @@
+#!name=Auto-Whitelist
+#!desc=Automatically add to whitelist
+
+[Rule]
+IP-CIDR,124.221.69.228/32,DIRECT,no-resolve
+
+[Script]
+po0-fw-cron = type=cron,cronexpr="*/10 * * * *",script-path=https://raw.githubusercontent.com/gravidynamics/My-Proxy-Rules/refs/heads/main/po0-firewall-whitelist.js?v=3,timeout=60,argument=tokens=在此填入pgnfw_token
+po0-fw-event = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/gravidynamics/My-Proxy-Rules/refs/heads/main/po0-firewall-whitelist.js?v=3,timeout=60,argument=tokens=在此填入pgnfw_token
