@@ -61,7 +61,7 @@ var INLINE_TOKENS = "";
 var API_BASE = "https://124.221.69.228/api/firewall/"; // + <token> + "/add"
 var STORE_PREFIX = "Po0_fw_";
 var TOKENS_KEY = "Po0fw_tokens";
-var HIST_WINDOW_MS = 24 * 3600 * 1000; // 🛰️ Cellular activity tracking window
+var HIST_WINDOW_MS = 7 * 24 * 3600 * 1000; // 🛰️ Cellular activity tracking window
 
 /* ---------- Runtime Compatibility Layer ---------- */
 
