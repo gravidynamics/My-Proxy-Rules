@@ -54,17 +54,18 @@
 
 /* ---------- Execution Diagnostics ---------- */
 
-console.log(
-  "[Po0] Script started",
-  JSON.stringify({
-    name: $script.name,
-    type: $script.type,
-    event: typeof $event !== "undefined" ? $event.name : null,
-    trigger: typeof $trigger !== "undefined" ? $trigger : null,
-    argument: typeof $argument !== "undefined" ? $argument : null,
-    network: $network
-  })
-);
+try {
+  $surge.logbook(
+    "[Po0] SCRIPT STARTED" +
+    " | name=" + $script.name +
+    " | type=" + $script.type +
+    " | time=" + new Date().toISOString() +
+    " | interface=" +
+    (($network.v4 && $network.v4.primaryInterface) || "unknown")
+  );
+} catch (e) {
+  console.log("[Po0] Logbook error: " + String(e));
+}
 
 var INLINE_TOKENS = "";
 
