@@ -52,6 +52,20 @@
  *    (fill this in directly when maintaining a custom copy of the script)
  */
 
+/* ---------- Execution Diagnostics ---------- */
+
+console.log(
+  "[Po0] Script started",
+  JSON.stringify({
+    name: $script.name,
+    type: $script.type,
+    event: typeof $event !== "undefined" ? $event.name : null,
+    trigger: typeof $trigger !== "undefined" ? $trigger : null,
+    argument: typeof $argument !== "undefined" ? $argument : null,
+    network: $network
+  })
+);
+
 var INLINE_TOKENS = "";
 
 var API_BASE = "https://124.221.69.228/api/firewall/"; // + <token> + "/add"
