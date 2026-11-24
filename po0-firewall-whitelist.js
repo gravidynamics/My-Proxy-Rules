@@ -52,21 +52,6 @@
  *    (fill this in directly when maintaining a custom copy of the script)
  */
 
-/* ---------- Execution Diagnostics ---------- */
-
-try {
-  $surge.logbook(
-    "[Po0] SCRIPT STARTED" +
-    " | name=" + $script.name +
-    " | type=" + $script.type +
-    " | time=" + new Date().toISOString() +
-    " | interface=" +
-    (($network.v4 && $network.v4.primaryInterface) || "unknown")
-  );
-} catch (e) {
-  console.log("[Po0] Logbook error: " + String(e));
-}
-
 var INLINE_TOKENS = "";
 
 var API_BASE = "https://124.221.69.228/api/firewall/"; // + <token> + "/add"
